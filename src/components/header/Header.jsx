@@ -16,7 +16,7 @@ const Header = (props) => {
       <nav className="menu">
         <figure className="logo">
           <a href="index.html">
-            <img src={focusLogo} height="30" alt="Logo Focus" />
+            <img src={focusLogo} height="40" alt="Logo Focus" />
           </a>
         </figure>
         <ul className="menu-items">

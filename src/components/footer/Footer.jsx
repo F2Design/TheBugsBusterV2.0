@@ -1,68 +1,57 @@
-import React from 'react';
-import '../../assets/styles/components/footer/Footer.scss';
+import React from "react";
+import LogoFooter from "../../assets/images/logo-focus-footer.svg";
+import LogoGithub from "../../assets/images/logoGitHub.svg";
+import LogoLinkedin from "../../assets/images/linkedin.svg";
+import LogoFacebook from "../../assets/images/facebook.svg";
+import "../../assets/styles/components/footer/Footer.scss";
 
 const Footer = () => (
   <footer className="footer">
     <ul className="logo__footer">
       <figure>
         <a href="index.html">
-          <img
-            src="images/logo-focus-footer.svg"
-            height="30"
-            alt="Logo Focus"
-          />
+          <img src={LogoFooter} height="30" alt="Logo Focus" />
         </a>
       </figure>
     </ul>
 
     <ul className="item__menu-footer">
       <li>
-        <a href="">Soporte</a>
+        <a href="#">Soporte</a>
       </li>
       <li>
-        <a href="">Nosotros</a>
+        <a href="#">Nosotros</a>
       </li>
     </ul>
 
     <ul className="item__menu-footer">
       <li>
-        <a href="">Noticias</a>
+        <a href="#">Noticias</a>
       </li>
       <li>
-        <a href="">Privacidad</a>
+        <a href="#">Privacidad</a>
       </li>
     </ul>
 
     <ul className="social__footer">
       <div className="social">
         <li className="social__icon">
-          <a href='#'>
-            <img className="" src="images/github.svg" width="20" alt="GitHub"
-            />
+          <a href="#">
+            <img src={LogoGithub} width="20" alt="GitHub" />
           </a>
-          <p className="social__text-footer">Github</p>
+          <p className="social__footer-github">Github</p>
         </li>
         <li className="social__icon">
           <a href="#">
-            <img
-              className=""
-              src="images/linkedin.svg"
-              width="20"
-              alt="Linkedin"
-            />
+            <img src={LogoLinkedin} width="20" alt="Linkedin" />
           </a>
-          <p className="social__text-footer">Linkedin</p>
+          <p className="">Linkedin</p>
         </li>
         <li className="social__icon">
           <a href="#">
-            <img
-              className=""
-              src="images/facebook.svg"
-              width="20"
-              alt="Facebook"
-            />
+            <img src={LogoFacebook} width="20" alt="Facebook" />
           </a>
-          <p className="social__text-footer">Facebook</p>
+          <p className="social__footer-text">Facebook</p>
         </li>
       </div>
     </ul>
